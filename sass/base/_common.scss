@@ -1,0 +1,12 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--first-btn-color);
+    color: var(--second-title-color);
+    letter-spacing: 0.03em;
+}
+
+.list,
+.link {
+    list-style: none;
+    text-decoration: none;
+}
