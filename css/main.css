@@ -22,12 +22,14 @@ h6 {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 ul,
 ol {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 body {
@@ -653,7 +655,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--first-btn-color);
 }
 .prices__list-text {
   width: 205px;
@@ -701,7 +703,7 @@ body {
   transition-property: background-color;
 }
 .command__soc-link:hover .command__soc-icon, .command__soc-link:focus .command__soc-icon {
-  fill: #ffffff;
+  fill: var(--first-btn-color);
   transition-timing-function: var(--timing-funtion);
   transition-duration: 250ms;
   transition-property: fill;
@@ -725,8 +727,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .command__card {
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
+  border: 1px solid var(--first-btn-color);
+  background-color: var(--first-btn-color);
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -785,6 +787,8 @@ body {
 }
 .footer__container {
   display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 .footer__logo-web {
   font-family: "Raleway", sans-serif;
@@ -882,7 +886,7 @@ body {
 .footer-tex-decor {
   display: flex;
 }
-.footer-flax2 {
+.footer-flax {
   margin-left: 70px;
 }
 .footer__list__soc {
@@ -891,8 +895,6 @@ body {
 }
 .footer__text1 {
   display: flex;
-  width: 219px;
-  height: 16px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -903,8 +905,6 @@ body {
   color: var(--first-btn-color);
 }
 .footer-text2 {
-  width: 47px;
-  height: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -915,7 +915,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-flax4 {
+.footer-input {
   display: flex;
   align-items: center;
   height: 50px;
@@ -940,12 +940,12 @@ body {
 .footer__btn-icon {
   margin-left: 10px;
 }
-.footer-flax3 {
+.footer-text {
   margin-left: auto;
   display: block;
 }
 .footer .modal-footer-input {
-  color: var(--first-btn-color);
+  outline: transparent;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -954,6 +954,12 @@ body {
   border-radius: 4px;
   background: #2F303A;
   padding-left: 16px;
+}
+.footer .modal-footer-input:hover {
+  border-color: var(--accent-color);
+}
+.footer .modal-footer-input:focus {
+  border-color: var(--accent-color);
 }
 
 .customer {
@@ -996,15 +1002,9 @@ body {
 }
 .customer__list-link:hover, .customer__list-link:focus {
   border-color: var(--accent-color);
-  transition-timing-function: var(--timing-funtion);
-  transition-duration: 250ms;
-  transition-property: color;
 }
 .customer__list-link:hover svg, .customer__list-link:focus svg {
   fill: var(--accent-color);
-  transition-timing-function: var(--timing-funtion);
-  transition-duration: 250ms;
-  transition-property: fill;
 }
 .customer__list-icon {
   fill: #AFB1B8;

@@ -18,6 +18,8 @@
     
                 &__container {
             display: flex;
+            justify-content: center;
+            align-items: baseline;
     
         }
     
@@ -152,7 +154,7 @@
     
     
     
-        &-flax2 {
+        &-flax{
     
             margin-left: 70px;
         }
@@ -164,8 +166,7 @@
     
         &__text1 {
             display: flex;
-            width: 219px;
-            height: 16px;
+
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
@@ -178,11 +179,7 @@
         }
     
         &-text2 {
-    
-            width: 47px;
-            height: 20px;
-    
-    
+ 
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -197,7 +194,7 @@
     
         }
     
-        &-flax4 {
+        &-input {
             display: flex;
             align-items: center;
             height: 50px;
@@ -227,14 +224,14 @@
             margin-left: 10px;
         }
     
-        &-flax3 {
+        &-text {
             margin-left: auto;
             display: block;
     
         }
     
-        .modal-footer-input {
-            color: var(--first-btn-color);
+        .modal-footer-input {  
+            outline: transparent;
             width: 358px;
             height: 50px;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -243,6 +240,13 @@
             border-radius: 4px;
             background: #2F303A;
             padding-left: 16px;
+            &:hover {
+                    border-color: var(--accent-color);
+                }
+                &:focus {
+                    border-color: var(--accent-color);
+                }
         }
+                
 }
 

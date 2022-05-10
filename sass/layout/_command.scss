@@ -40,7 +40,7 @@
     
             &:hover .command__soc-icon,
             &:focus .command__soc-icon {
-                fill: #ffffff;
+                fill: var(--first-btn-color);
                 transition-timing-function: var(--timing-funtion);
                 transition-duration: 250ms;
                 transition-property: fill;
@@ -85,8 +85,8 @@
         }
     
                 &__card {
-            border: 1px solid #ffffff;
-            background-color: #ffffff;
+            border: 1px solid var(--first-btn-color);
+            background-color: var(--first-btn-color);
             padding-top: 30px;
             padding-bottom: 30px;
             border-radius: 0px 0px 4px 4px;
